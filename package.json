@@ -14,7 +14,7 @@
 		"prepublishOnly": "npm run compile",
 		"compile": "npm run clean && tsc -p tsconfig.json",
 		"watch": "tsc -w -p .",
-		"clean": "rm -rf js && rm -rf dts",
+		"clean": "rm -rf js/*.js js/*.js.map js/tests/*.js js/tests/*.map dts",
 		"start": "node js/index.js",
     "lint": "tslint -c tslint.json ts/**",
     "lint-fix": "tslint -c tslint.json --fix ts/**"
