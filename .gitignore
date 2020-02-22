@@ -1,5 +1,9 @@
+ts/dev.*
 .idea
 node_modules
 dts
-js
+js/*.js
+js/*.map
+js/tests/*.js
+js/tests/*.map
 package-lock.json

@@ -1,14 +1,22 @@
-# ***
-A package to template lorem ipsum.
+# Turns Markdown-like strings into beautiful JSX
 
-## Import
-## Examples
+Turns
 
-## Documentation
-Everything is completely documented. You can view the
-[declaration files](https://github.com/elijahjcobb/request/***/master/dts) or even the
-[source code](https://github.com/elijahjcobb/***/tree/master/ts) on GitHub.
+```
+https://s3.amazonaws.com/keybase_processed_uploads/d24c7479498157f2cb81e185977dfd05_360_360.jpeg
+```
 
-## Bugs
-If you find any bugs please [create an issue on GitHub](https://github.com/elijahjcobb/***/issues) or if you are old
-fashioned email me at [elijah@elijahcobb.com](mailto:elijah@elijahcobb.com).
+into
+
+```html
+<div>
+  <div className="markdown">
+    <p>
+      <a href="https://s3.amazonaws.com/keybase_processed_uploads/d24c7479498157f2cb81e185977dfd05_360_360.jpeg">https://s3.amazonaws.com/keybase_processed_uploads/d24c7479498157f2cb81e185977dfd05_360_360.jpeg</a>
+    </p>
+  </div>
+  <div class="previews">
+    <img src="https://s3.amazonaws.com/keybase_processed_uploads/d24c7479498157f2cb81e185977dfd05_360_360.jpeg">
+  </div>
+</div>
+```

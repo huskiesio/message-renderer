@@ -1,18 +1,23 @@
 {
-	"name": "@elijahjcobb/***",
+	"name": "@huskiesio/message-renderer",
 	"version": "0.1.0",
 	"description": "",
 	"keywords": [],
 	"main": "js/index",
 	"types": "dts/index",
-	"files": ["js", "dts"],
+	"files": [
+		"js",
+		"dts"
+	],
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "npm run lint && jest",
 		"prepublishOnly": "npm run compile",
 		"compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
 		"watch": "tsc -w -p .",
 		"clean": "rm -rf js && rm -rf dts",
-		"start": "node js/index.js"
+		"start": "node js/index.js",
+    "lint": "tslint -c tslint.json ts/**",
+    "lint-fix": "tslint -c tslint.json --fix ts/**"
 	},
 	"repository": {
 		"type": "git",
@@ -27,12 +32,36 @@
 		"url": "https://github.com/elijahjcobb/***/issues"
 	},
 	"homepage": "https://github.com/elijahjcobb/***#readme",
-	"dependencies": {},
+	"dependencies": {
+		"highlight.js": "^9.18.1",
+		"markdown-it": "^10.0.0",
+		"markdown-it-katex": "^2.0.3",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0"
+	},
 	"devDependencies": {
+		"@types/highlight.js": "^9.12.3",
+		"@types/jest": "latest",
+		"@types/markdown-it": "0.0.9",
 		"@types/node": "latest",
-		"typescript": "latest",
-		"tslint": "latest",
+		"@types/react": "16.7.18",
+		"enzyme": "^3.11.0",
+		"enzyme-adapter-react-16": "^1.15.2",
 		"jest": "latest",
-		"@types/jest": "latest"
+		"jest-environment-enzyme": "^7.1.2",
+		"jest-enzyme": "^7.1.2",
+		"jsdom": "16.2.0",
+		"jsdom-global": "3.0.2",
+		"tslint": "^6.0.0",
+		"typescript": "latest"
+	},
+	"jest": {
+		"setupFilesAfterEnv": [
+			"jest-enzyme"
+		],
+		"testEnvironment": "enzyme",
+		"testEnvironmentOptions": {
+			"enzymeAdapter": "react16"
+		}
 	}
 }
