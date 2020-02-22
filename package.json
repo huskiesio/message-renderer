@@ -1,6 +1,6 @@
 {
 	"name": "@huskiesio/message-renderer",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "",
 	"keywords": [],
 	"main": "js/index",
@@ -16,8 +16,8 @@
 		"watch": "tsc -w -p .",
 		"clean": "rm -rf js/*.js js/*.js.map js/tests/*.js js/tests/*.map dts",
 		"start": "node js/index.js",
-    "lint": "tslint -c tslint.json ts/**",
-    "lint-fix": "tslint -c tslint.json --fix ts/**"
+		"lint": "tslint -c tslint.json ts/**",
+		"lint-fix": "tslint -c tslint.json --fix ts/**"
 	},
 	"repository": {
 		"type": "git",
