@@ -1,15 +1,15 @@
 {
 	"name": "@huskiesio/message-renderer",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "🖋 Turns Markdown-like strings into beautiful JSX",
 	"keywords": [
-    "markdown",
-    "jsx",
-    "katex",
-    "math",
-    "highlight",
-    "code"
-  ],
+		"markdown",
+		"jsx",
+		"katex",
+		"math",
+		"highlight",
+		"code"
+	],
 	"main": "js/index",
 	"types": "dts/index",
 	"files": [
