@@ -4,6 +4,7 @@ import hljs from "highlight.js";
 import React, {useRef, useState, useEffect, FunctionComponent} from "react";
 
 const md: MarkdownIt = new MarkdownIt({
+  breaks: true,
   linkify: true,
   highlight: (str: string, lang: string): string => {
 	if (lang && hljs.getLanguage(lang)) {

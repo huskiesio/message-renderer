@@ -45,5 +45,21 @@ describe("MessageRenderer", () => {
     const wrapper = mount(<MessageRenderer text={codeText}/>);
 
     expect(wrapper.html()).toMatchSnapshot();
-  })
+  });
+
+  test("renders math", () => {
+    const mathText = '$\\sqrt{3}$';
+
+    const wrapper = mount(<MessageRenderer text={mathText}/>);
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test("renders line breaks", () => {
+    const text = 'hello\nworld';
+
+    const wrapper = mount(<MessageRenderer text={text}/>);
+
+    expect(wrapper.html()).toMatchSnapshot();
+  });
 });
