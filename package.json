@@ -21,17 +21,17 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/elijahjcobb/***.git"
+		"url": "git+https://github.com/huskiesio/message-renderer.git"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
-	"author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
+	"author": "Max Isom <hi@maxisom.me> (https://maxisom.me/)",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/elijahjcobb/***/issues"
+		"url": "https://github.com/huskiesio/message-renderer/issues"
 	},
-	"homepage": "https://github.com/elijahjcobb/***#readme",
+	"homepage": "https://github.com/huskiesio/message-renderer#readme",
 	"dependencies": {
 		"highlight.js": "^9.18.1",
 		"markdown-it": "^10.0.0",
