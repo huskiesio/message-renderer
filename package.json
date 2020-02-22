@@ -12,7 +12,7 @@
 	"scripts": {
 		"test": "npm run lint && jest",
 		"prepublishOnly": "npm run compile",
-		"compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+		"compile": "npm run clean && tsc -p tsconfig.json",
 		"watch": "tsc -w -p .",
 		"clean": "rm -rf js && rm -rf dts",
 		"start": "node js/index.js",
