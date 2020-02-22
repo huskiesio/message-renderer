@@ -20,3 +20,16 @@ into
   </div>
 </div>
 ```
+
+## Usage
+
+```javascript
+import MessageRenderer from '@huskiesio/message-renderer';
+
+const SampleMessage = <MessageRenderer text="**Bolded text**"/>;
+```
+
+You need to include a couple stylesheets as well:
+
+- `https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css` for the KaTeX math renderer
+- `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css` for the code highlighting
