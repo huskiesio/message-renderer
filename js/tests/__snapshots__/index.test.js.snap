@@ -6,7 +6,7 @@ exports[`MessageRenderer adds images to preview 1`] = `
 `;
 
 exports[`MessageRenderer highlights code 1`] = `
-"<div><div class=\\"markdown\\"><pre><code class=\\"language-javascript\\"><span class=\\"hljs-keyword\\">const</span> hello = <span class=\\"hljs-string\\">\\"world\\"</span>;
+"<div><div class=\\"markdown\\"><pre class=\\"hljs\\"><code class=\\"language-javascript\\"><span class=\\"hljs-keyword\\">const</span> hello = <span class=\\"hljs-string\\">\\"world\\"</span>;
 </code></pre>
 </div><div class=\\"previews\\"></div></div>"
 `;
